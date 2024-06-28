@@ -1,0 +1,47 @@
+/* Add this to the top of prescription.css */
+@import url("style.css");
+
+/* Styles specific to the prescription form */
+.prescription-form {
+    background-color: var(--primary-color-light);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.prescription-form input[type="text"],
+.prescription-form input[type="number"],
+.prescription-form input[type="tel"],
+.prescription-form input[type="datetime-local"] {
+    height: auto; /* This will make the input fields have the same height as other input fields */
+}
+
+#medicine-table,
+#test-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+#medicine-table th,
+#medicine-table td,
+#test-table th,
+#test-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--primary-color);
+}
+
+#medicine-table th,
+#test-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+#advice-time {
+    height: 45.5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}

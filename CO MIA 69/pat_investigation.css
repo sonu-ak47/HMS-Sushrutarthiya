@@ -1,0 +1,45 @@
+.investigation-form h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.investigation-form .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.investigation-form .form-group {
+    flex: 1;
+}
+
+.investigation-form .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.investigation-form .checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.investigation-form .checkbox-item input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.investigation-form .signature-box {
+    width: 100%;
+    height: 150px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+#pat-id{
+    width: calc(100% / 3 - 1rem); /* Adjust the calculation as needed */
+}
+
+

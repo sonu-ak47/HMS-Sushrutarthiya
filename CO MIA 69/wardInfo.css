@@ -1,0 +1,33 @@
+.bed-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.bed-table th,
+.bed-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--primary-color);
+}
+
+.bed-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.bed-table input[type="text"],
+.bed-table select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--text-dark);
+}
+
+.bed-table input[type="text"]:focus,
+.bed-table select:focus {
+    border-color: var(--primary-color-dark);
+    outline: none;
+}

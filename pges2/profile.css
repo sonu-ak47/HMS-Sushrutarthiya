@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --primary-color: #003403;
+    --primary-color-dark: #0d1f84;
+    --primary-color-light: #e9f7f7;
+    --secondary-color: #00422d;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(0, 119, 58), rgba(0,43,11));
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.nav__logo span {
+    color: var(--secondary-color);
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: white;
+    background-color: #005425;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #002c0b;
+}
+
+.alltab {
+    background-color: var(--primary-color-light);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.alltab h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table th:last-child,
+.table td:last-child {
+    text-align: center;
+}
+
+.table th:nth-last-child(2),
+.table td:nth-last-child(2) {
+    text-align: center;
+}
+
+.table .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.table .btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.table .btn-warning:hover {
+    background-color: #e0a800;
+    color: #212529;
+}
+
+.table .btn-danger {
+    background-color: #dc3545;
+}
+
+.table .btn-danger:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .nav__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__logo {
+        margin-bottom: 1rem;
+    }
+
+    #logout {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #003403; /* Color of the scrollbar thumb */
+    border-radius: 12px; /* Roundness of the scrollbar thumb */
+    border: 3px solid #e9f7f7; /* Space around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #002b0b; /* Darker color of the scrollbar thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+    background: #e9f7f7; /* Color of the scrollbar track */
+    border-radius: 12px; /* Roundness of the scrollbar track */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for the scrollbar track */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #007439 #e9f7f7;
+}
+
+/* For Internet Explorer and Edge */
+* {
+    -ms-overflow-style: none; /* Hide the scrollbar for IE and Edge */
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+}
